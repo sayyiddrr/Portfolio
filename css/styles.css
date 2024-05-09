@@ -3789,8 +3789,16 @@ textarea.form-control-lg {
   font-size: var(--bs-navbar-brand-font-size);
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  font-size: 60px;;
 }
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 36px; /* Ubah ukuran font menjadi 36px pada layar kecil */
+  }
+}
+
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
 }
@@ -8148,6 +8156,10 @@ textarea.form-control-lg {
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: #fff !important;
+}
+
+.bg-toggler {
+  background-color: #1abc9c;
 }
 
 .bg-secondary {
